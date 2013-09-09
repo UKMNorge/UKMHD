@@ -1,0 +1,18 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /
+
+# om HD1
+RewriteRule ^om/?$ index.php [L]
+
+
+
+# add a trailing slash to /hd-admin
+RewriteRule ^([_0-9a-zA-Z-]+/)?hd-admin$ $1hd-admin/ [R=301,L]
+
+RewriteEngine On  
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f  
+RewriteRule ^(.*)$ hd-admin/index.php [L]
+
+#RewriteRule ^hd-admin/([0-9]{4}-[0-9]{2}-[0-9]{2}_[a-zA-Z]+)/?([a-zA-Z-_]+)/?([a-zA-Z-_]+)/$ hd-admin/index.php?HD_PRODUCTION=$1&HD_MODULE=$2&HD_TAB=$3 [L]

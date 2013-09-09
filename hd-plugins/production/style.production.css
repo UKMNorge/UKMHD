@@ -1,0 +1,29 @@
+div.clarification {
+}
+div.clarification div.info,
+div.clarification div.input {
+ 	 float: left;
+}
+div.clarification div.help {
+	font-size: 12px;
+}
+div.clarification div.info div.title {
+ font-weight: bold; 
+}
+div.clarification div.clarifier {
+  clear: both; 
+  border-top: 1px solid #ccc;
+  background: #eee;
+  margin: 0px -9px -9px -9px;
+  padding: 2px 2px 2px 2px;
+  font-style: italic;
+  color: #999;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: right;
+}
+
+
+div.ui-datepicker{
+ font-size:10px;
+}
